@@ -1,4 +1,4 @@
-mod_image_swoop
-===============
+joomla__mod_image_swoop
+=======================
 
-Image Swoop module. Camera Slideshow plugin based slider for Joomla 3
+Image Swoop slider module for Joomla 3x
