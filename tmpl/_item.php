@@ -57,7 +57,12 @@ if(!empty($itemURLs)){
 				if ($item->alternative_readmore){
 					$readMoreText = $item->alternative_readmore;
 				}
-			echo '<a class="btn btn-info readmore" href="'.$item->link.'"><span>'. $readMoreText .'</span></a>';
+				if(!empty($itemUrl)){
+					echo '<a class="btn btn-info readmore" href="'.$itemUrl.'"><span>'. $readMoreText .'</span></a>';
+				}
+				else{
+					echo '<a class="btn btn-info readmore" href="'.$item->link.'"><span>'. $readMoreText .'</span></a>';
+				}
 		endif; ?>
 
 		</div>
