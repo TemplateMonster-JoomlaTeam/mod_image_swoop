@@ -52,16 +52,16 @@ if(!empty($itemURLs)){
 			<?php echo $item->introtext; ?>
 	
 		<!-- Read More link -->
-		<?php if (isset($item->link) && $item->readmore != 0 && $params->get('readmore')) :
+		<?php if ($params->get('readmore')) :
 			$readMoreText = JText::_('MOD_IMAGE_SWOOP_READMORE');
 				if ($item->alternative_readmore){
 					$readMoreText = $item->alternative_readmore;
 				}
 				if(!empty($itemUrl)){
-					echo '<a class="btn btn-info readmore" href="'.$itemUrl.'"><span>'. $readMoreText .'</span></a>';
+					echo '<a class="btn btn-info readmore" href="'.$itemUrl.'" target="_'.$params->get('target').'"><span>'. $readMoreText .'</span></a>';
 				}
-				else{
-					echo '<a class="btn btn-info readmore" href="'.$item->link.'"><span>'. $readMoreText .'</span></a>';
+				else if(isset($item->link) && $item->readmore != 0){
+					echo '<a class="btn btn-info readmore" href="'.$item->link.'" target="_'.$params->get('target').'"><span>'. $readMoreText .'</span></a>';
 				}
 		endif; ?>
 
