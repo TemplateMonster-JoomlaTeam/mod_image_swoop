@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
  ?>
 
 
-<div id="camera-slideshow" class="<?php echo $skin; ?> <?php echo $moduleclass_sfx; ?> camera_wrap pattern_<?php echo $params->get('pattern'); ?>">
+<div id="camera-slideshow_<?php echo $module->id; ?>" class="<?php echo $skin; ?> <?php echo $moduleclass_sfx; ?> camera_wrap pattern_<?php echo $params->get('pattern'); ?>">
 <?php
 	// Item URL
 	if($params->get('item_url')){
@@ -33,8 +33,8 @@ defined('_JEXEC') or die;
 </div>
 
 <script type="text/javascript">
-	jQuery(document).ready(function(){
-		jQuery('#camera-slideshow').camera({
+	jQuery(function(){
+		jQuery('#camera-slideshow_<?php echo $module->id; ?>').camera({
 			alignment			: "<?php echo $params->get('alignment'); ?>", //topLeft, topCenter, topRight, centerLeft, center, centerRight, bottomLeft, bottomCenter, bottomRight
 			autoAdvance				: <?php echo $params->get('autoAdvance'); ?>,	//true, false
 			mobileAutoAdvance	: <?php echo $params->get('mobileAutoAdvance'); ?>, //true, false. Auto-advancing for mobile devices
