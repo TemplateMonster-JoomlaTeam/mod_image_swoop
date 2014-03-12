@@ -45,9 +45,9 @@ if(!empty($itemURLs)){
 			<?php echo $item->beforeDisplayContent; ?>
 	
 			<?php if ($params->get('published')) : ?>
-		<div class="item_published">
+		<time datetime="<?php echo JHtml::_('date', $item->publish_up, 'Y-m-d H:i'); ?>" class="item_published">
 			<?php echo JHtml::_('date', $item->publish_up, JText::_('DATE_FORMAT_LC1')); ?>
-		</div>
+		</time>
 	<?php endif; ?>
 			<?php echo $item->introtext; ?>
 	
