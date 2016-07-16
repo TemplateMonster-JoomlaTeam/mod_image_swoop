@@ -522,8 +522,13 @@
 						<option value="mosaicSpiralReverse">mosaicSpiralReverse</option>
 						<option value="topLeftBottomRight">topLeftBottomRight</option>
 						<option value="bottomRightTopLeft">bottomRightTopLeft</option>
+						<option value="topRightBottomLeft">topRightBottomLeft</option>
 						<option value="bottomLeftTopRight">bottomLeftTopRight</option>
-						<option value="bottomLeftTopRight">bottomLeftTopRight</option>
+						<option value="scrollLeft">scrollLeft</option>
+						<option value="scrollRight">scrollRight</option>
+						<option value="scrollHorz">scrollHorz</option>
+						<option value="scrollBottom">scrollBottom</option>
+						<option value="scrollTop">scrollTop</option>
 					</field>
 
 					<field name="mobileFx" type="list" default="simpleFade" label="MOD_IMAGE_SWOOP_MOBILE_FX" description="MOD_IMAGE_SWOOP_MOBILE_FX_DESC">
@@ -549,8 +554,13 @@
 						<option value="mosaicSpiralReverse">mosaicSpiralReverse</option>
 						<option value="topLeftBottomRight">topLeftBottomRight</option>
 						<option value="bottomRightTopLeft">bottomRightTopLeft</option>
+						<option value="topRightBottomLeft">topRightBottomLeft</option>
 						<option value="bottomLeftTopRight">bottomLeftTopRight</option>
-						<option value="bottomLeftTopRight">bottomLeftTopRight</option>
+						<option value="scrollLeft">scrollLeft</option>
+						<option value="scrollRight">scrollRight</option>
+						<option value="scrollHorz">scrollHorz</option>
+						<option value="scrollBottom">scrollBottom</option>
+						<option value="scrollTop">scrollTop</option>
 					</field>
 
 					<!--<field name="mobileFx" type="text" default="simpleFade" label="MOD_IMAGE_SWOOP_MOBILE_FX" description="MOD_IMAGE_SWOOP_MOBILE_FX_DESC"/> -->
